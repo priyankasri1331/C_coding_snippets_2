@@ -1,11 +1,14 @@
 #include <stdio.h>
 
-void main()
+int main()
 {
 int a = 10;
 int b = 10;
 int c = 20;
 int d;
+int y;
+int x=11;
+float h;
 
 
 /*Escape sequences in C*/
@@ -88,6 +91,22 @@ printf("\n----------------\n");
 /*Bitwise operators - complement of n = -(n+1)*/
 
 printf("\nsize of a is %d bytes",sizeof(a));
+
+/*Ternary*/
+
+y = x > 10? 100:200;
+printf("\n%d",y);
+
+
+/*Comma operator*/
+
+x = (y = 3,y+1);
+printf("\n%d",x);
+
+/*type cast*/
+x = 7;
+h = (float) x;
+printf("\n%f",h/2);
 
 return 0;
 }
