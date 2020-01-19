@@ -9,7 +9,7 @@ int main()
 
     for(int i = 0; i < 10;i++)
     {
-        b[i] = i;
+        *(b+i) = i;
     }
 
     for(int j = 0; j<10;j++)
